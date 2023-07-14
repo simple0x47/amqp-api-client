@@ -1,0 +1,25 @@
+[package]
+name = "amqp-api-client"
+version = "0.1.0"
+edition = "2021"
+description = "Client utility for consuming AMQP APIs"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+amqp-api-shared = "0.1"
+cooplan-config-reader = "0.1.0"
+
+futures-util = "0.3"
+
+lapin = "2.2"
+
+log = "0.4"
+
+serde = {version = "1", features = ["derive"]}
+serde_json = "1"
+
+tokio = {version = "1", features = ["sync", "time"]}
+uuid = {version = "1.1", features = ["v4", "macro-diagnostics"]}
